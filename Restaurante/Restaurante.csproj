@@ -46,6 +46,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categoria.Designer.cs">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Armazenamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armazenamento.Designer.cs">
+      <DependentUpon>Armazenamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesa.Designer.cs">
+      <DependentUpon>Mesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedido.Designer.cs">
+      <DependentUpon>Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoPrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoPrato.Designer.cs">
+      <DependentUpon>PedidoPrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prato.Designer.cs">
+      <DependentUpon>Prato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Producao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producao.Designer.cs">
+      <DependentUpon>Producao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnidadeMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnidadeMedida.Designer.cs">
+      <DependentUpon>UnidadeMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingredientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingredientes.Designer.cs">
+      <DependentUpon>Ingredientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +109,33 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Categoria.resx">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armazenamento.resx">
+      <DependentUpon>Armazenamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mesa.resx">
+      <DependentUpon>Mesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedido.resx">
+      <DependentUpon>Pedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoPrato.resx">
+      <DependentUpon>PedidoPrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prato.resx">
+      <DependentUpon>Prato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producao.resx">
+      <DependentUpon>Producao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnidadeMedida.resx">
+      <DependentUpon>UnidadeMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingredientes.resx">
+      <DependentUpon>Ingredientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -9,3 +9,12 @@ C:\Users\weder.tito\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.c
 C:\Users\weder.tito\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
 C:\Users\weder.tito\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.exe
 C:\Users\weder.tito\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.pdb
+C:\Users\weder.tito\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Categoria.resources
+C:\Users\weder.tito\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Armazenamento.resources
+C:\Users\weder.tito\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Mesa.resources
+C:\Users\weder.tito\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Pedido.resources
+C:\Users\weder.tito\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.PedidoPrato.resources
+C:\Users\weder.tito\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Prato.resources
+C:\Users\weder.tito\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Producao.resources
+C:\Users\weder.tito\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.UnidadeMedida.resources
+C:\Users\weder.tito\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Ingredientes.resources
