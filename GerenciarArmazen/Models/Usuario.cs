@@ -22,6 +22,10 @@ namespace GerenciarArmazen.Models
         [Display(Name = "Matricula")]
         public string? Matricula { get; set; }
 
+        [Column("Senha")]
+        [Display(Name = "Senha")]
+        public string? Senha { get; set; }
+
         [Column("Gerente")]
         [Display(Name = "Gerente")]
         public Boolean Gerente { get; set; }

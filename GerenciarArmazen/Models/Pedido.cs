@@ -22,6 +22,10 @@ namespace GerenciarArmazen.Models
         [Display(Name = "Mesa")]
         public Mesa? mesa { get; set; }
 
+        [Column("Valor")]
+        [Display(Name = "Valor")]
+        public double? Valor { get; set; }
+
         public int PratoId { get; set; }
         public int UsuarioId { get; set; }
 
