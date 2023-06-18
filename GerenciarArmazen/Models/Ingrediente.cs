@@ -10,5 +10,8 @@
 
         public virtual Categoria? Categoria { get; set; }
         public virtual Armazenamento? Armazenamento { get; set; }
+
+        public virtual Prato? Prato { get; set; }
+
     }
 }

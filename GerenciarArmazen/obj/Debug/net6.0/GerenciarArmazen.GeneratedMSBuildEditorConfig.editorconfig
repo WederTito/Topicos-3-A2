@@ -84,6 +84,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5ncmVkaWVudGVzMVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Tito/source/repos/GerenciarArmazen/GerenciarArmazen/Views/Pedidos1/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvczFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tito/source/repos/GerenciarArmazen/GerenciarArmazen/Views/Pedidos1/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvczFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tito/source/repos/GerenciarArmazen/GerenciarArmazen/Views/Pedidos1/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvczFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tito/source/repos/GerenciarArmazen/GerenciarArmazen/Views/Pedidos1/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvczFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tito/source/repos/GerenciarArmazen/GerenciarArmazen/Views/Pedidos1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvczFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Tito/source/repos/GerenciarArmazen/GerenciarArmazen/Views/Pedidos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -102,6 +122,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Tito/source/repos/GerenciarArmazen/GerenciarArmazen/Views/Pedidos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tito/source/repos/GerenciarArmazen/GerenciarArmazen/Views/Pratos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJhdG9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tito/source/repos/GerenciarArmazen/GerenciarArmazen/Views/Pratos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJhdG9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tito/source/repos/GerenciarArmazen/GerenciarArmazen/Views/Pratos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJhdG9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tito/source/repos/GerenciarArmazen/GerenciarArmazen/Views/Pratos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJhdG9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tito/source/repos/GerenciarArmazen/GerenciarArmazen/Views/Pratos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJhdG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Tito/source/repos/GerenciarArmazen/GerenciarArmazen/Views/Shared/Error.cshtml]

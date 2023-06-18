@@ -21,5 +21,11 @@ namespace GerenciarArmazen.Models
         [Column("Mesa")]
         [Display(Name = "Mesa")]
         public Mesa? mesa { get; set; }
+
+        public int PratoId { get; set; }
+        public int UsuarioId { get; set; }
+
+        public virtual Prato? Prato { get; set; }
+        public virtual Usuario? Usuario { get; set; }
     }
 }

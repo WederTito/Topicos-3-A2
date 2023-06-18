@@ -26,5 +26,7 @@ namespace GerenciarArmazen.Models
         [Display(Name = "Gerente")]
         public Boolean Gerente { get; set; }
 
+
+        public virtual Pedido? Pedido { get; set; }
     }
 }

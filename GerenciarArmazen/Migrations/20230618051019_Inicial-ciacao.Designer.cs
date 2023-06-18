@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GerenciarArmazen.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20230618035239_Ingrediente")]
-    partial class Ingrediente
+    [Migration("20230618051019_Inicial-ciacao")]
+    partial class Inicialciacao
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,7 +35,6 @@ namespace GerenciarArmazen.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Nome")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Nome");
 
@@ -54,12 +53,10 @@ namespace GerenciarArmazen.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Medida")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Medida");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Nome");
 
@@ -83,7 +80,6 @@ namespace GerenciarArmazen.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("Validade")
@@ -113,13 +109,47 @@ namespace GerenciarArmazen.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Descricao");
 
+                    b.Property<int>("PratoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
                     b.Property<int?>("mesa")
                         .HasColumnType("int")
                         .HasColumnName("Mesa");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("PratoId")
+                        .IsUnique();
+
+                    b.HasIndex("UsuarioId")
+                        .IsUnique();
+
                     b.ToTable("Pedido");
+                });
+
+            modelBuilder.Entity("GerenciarArmazen.Models.Prato", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("IngredienteId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IngredienteId")
+                        .IsUnique();
+
+                    b.ToTable("Prato");
                 });
 
             modelBuilder.Entity("GerenciarArmazen.Models.Usuario", b =>
@@ -132,7 +162,6 @@ namespace GerenciarArmazen.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Email");
 
@@ -141,12 +170,10 @@ namespace GerenciarArmazen.Migrations
                         .HasColumnName("Gerente");
 
                     b.Property<string>("Matricula")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Matricula");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Nome");
 
@@ -174,16 +201,59 @@ namespace GerenciarArmazen.Migrations
                     b.Navigation("Categoria");
                 });
 
+            modelBuilder.Entity("GerenciarArmazen.Models.Pedido", b =>
+                {
+                    b.HasOne("GerenciarArmazen.Models.Prato", "Prato")
+                        .WithOne("Pedido")
+                        .HasForeignKey("GerenciarArmazen.Models.Pedido", "PratoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GerenciarArmazen.Models.Usuario", "Usuario")
+                        .WithOne("Pedido")
+                        .HasForeignKey("GerenciarArmazen.Models.Pedido", "UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Prato");
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("GerenciarArmazen.Models.Prato", b =>
+                {
+                    b.HasOne("GerenciarArmazen.Models.Ingrediente", "Ingrediente")
+                        .WithOne("Prato")
+                        .HasForeignKey("GerenciarArmazen.Models.Prato", "IngredienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Ingrediente");
+                });
+
             modelBuilder.Entity("GerenciarArmazen.Models.Armazenamento", b =>
                 {
-                    b.Navigation("Ingrediente")
-                        .IsRequired();
+                    b.Navigation("Ingrediente");
                 });
 
             modelBuilder.Entity("GerenciarArmazen.Models.Categoria", b =>
                 {
-                    b.Navigation("Ingrediente")
-                        .IsRequired();
+                    b.Navigation("Ingrediente");
+                });
+
+            modelBuilder.Entity("GerenciarArmazen.Models.Ingrediente", b =>
+                {
+                    b.Navigation("Prato");
+                });
+
+            modelBuilder.Entity("GerenciarArmazen.Models.Prato", b =>
+                {
+                    b.Navigation("Pedido");
+                });
+
+            modelBuilder.Entity("GerenciarArmazen.Models.Usuario", b =>
+                {
+                    b.Navigation("Pedido");
                 });
 #pragma warning restore 612, 618
         }

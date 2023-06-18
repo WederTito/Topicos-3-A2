@@ -16,6 +16,7 @@ namespace GerenciarArmazen.MeuContexto
         public DbSet<Armazenamento> Armazenamento { get; set; }
         public DbSet<Pedido> Pedido { get; set; }
         public DbSet<Ingrediente> Ingrediente { get; set;}
+        public DbSet<Prato> Prato { get; set; }
 
     }
 }
