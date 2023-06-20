@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QHGnXSt6ny5FTvghnz+KBUcvdC0bLtmmBrxPPzLJ0aE=",
+  "Hash": "PlOUx8DxEodPQzEe0FcjSuTdvcJU/37XJMxszsqR9UI=",
   "Source": "GerenciarArmazen",
   "BasePath": "_content/GerenciarArmazen",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Tito\\source\\repos\\GerenciarArmazen\\GerenciarArmazen\\wwwroot\\Qrcode TITO.png",
+      "SourceId": "GerenciarArmazen",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Tito\\source\\repos\\GerenciarArmazen\\GerenciarArmazen\\wwwroot\\",
+      "BasePath": "_content/GerenciarArmazen",
+      "RelativePath": "Qrcode TITO.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Qrcode TITO.png"
     }
   ]
 }

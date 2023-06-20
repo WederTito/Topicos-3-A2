@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\GerenciarArmazen.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Tito\\source\\repos\\GerenciarArmazen\\GerenciarArmazen\\wwwroot\\Qrcode TITO.png",
+      "PackagePath": "staticwebassets\\Qrcode TITO.png"
+    },
+    {
       "Id": "C:\\Users\\Tito\\source\\repos\\GerenciarArmazen\\GerenciarArmazen\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
